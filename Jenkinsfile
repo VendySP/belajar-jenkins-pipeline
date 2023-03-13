@@ -1,5 +1,5 @@
 pipeline {
-    agent {
+    agent any
     stages {
         stage("Hello") {
             steps {
@@ -20,5 +20,4 @@ pipeline {
         cleanup {
             echo "Don't care success or error"
         }
-    }   
 }
